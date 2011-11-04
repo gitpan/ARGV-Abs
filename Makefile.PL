@@ -2,32 +2,34 @@
 use strict;
 use warnings;
 
-
+use 5.005;
 
 use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Transform paths in @ARGV to absolute paths',
-  'AUTHOR' => 'Olivier Mengué <dolmen@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'Test::More' => '0'
+  "ABSTRACT" => "Transform paths in \@ARGV to absolute paths",
+  "AUTHOR" => "Olivier Mengu\303\251 <dolmen\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'ARGV-Abs',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'ARGV::Abs',
-  'PREREQ_PM' => {
-    'Cwd' => '0',
-    'File::Spec' => '0'
+  "DISTNAME" => "ARGV-Abs",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "ARGV::Abs",
+  "PREREQ_PM" => {
+    "Cwd" => 0,
+    "File::Spec" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.01',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "1.00",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
