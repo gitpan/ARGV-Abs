@@ -4,7 +4,7 @@ use warnings;
 
 package ARGV::Abs;
 {
-  $ARGV::Abs::VERSION = '1.00';
+  $ARGV::Abs::VERSION = '1.01';
 }
 
 use File::Spec;
@@ -26,6 +26,10 @@ sub import
 =head1 NAME
 
 ARGV::Abs - Transform paths in @ARGV to absolute paths
+
+=head1 VERSION
+
+version 1.01
 
 =head1 SYNOPSIS
 
@@ -78,4 +82,3 @@ This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl 5 itself.
 
 =cut
-

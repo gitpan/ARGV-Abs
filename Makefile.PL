@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.005;
+use 5.006;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -12,6 +12,8 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Transform paths in \@ARGV to absolute paths",
   "AUTHOR" => "Olivier Mengu\303\251 <dolmen\@cpan.org>",
   "BUILD_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
     "Test::More" => 0
   },
   "CONFIGURE_REQUIRES" => {
@@ -27,7 +29,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.00",
+  "VERSION" => "1.01",
   "test" => {
     "TESTS" => "t/*.t"
   }
